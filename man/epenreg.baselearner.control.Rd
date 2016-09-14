@@ -20,7 +20,7 @@ epenreg.integrator.control(errfun=rmse.error, alpha=1.0
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{baselearners}{Names of base learners used. Currently, regression options available are Neural Network ("nnet"), Random Forest ("rf"), Support Vector Machine ("svm"), Gradient Boosting Machine ("gbm"), and K-Nearest Neighbors ("knn").}
+  \item{baselearners}{Names of base learners used. Currently, regression options available are Neural Network ("nnet"), Random Forest ("rf"), Support Vector Machine ("svm"), Gradient Boosting Machine ("gbm"), K-Nearest Neighbors ("knn"), Penalized Rergession ("penreg") and Bayesian Additive Regression Trees ("bart"). The last two learners are not include in the default list: "penreg" tends to produce highly correlated, and generally imprecise, predictions and skews the integration stage towards itself. "bart", on the other hand, is quite time- and memory-consuming to train, depsite generally having superior predictive performance. Users with more CPU and memory resources can add "bart" to achieve higher predictive accuracy.}
   \item{baselearner.configs}{List of base learner configurations. Default is to call \code{\link[EnsembleBase]{make.configs}} from package \pkg{EnsembleBase}.}
   \item{npart}{Number of partitions to train each base learner configuration in a CV scheme.}
   \item{nfold}{Number of folds within each data partition.}

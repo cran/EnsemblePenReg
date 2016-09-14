@@ -1,7 +1,8 @@
-067d68fb6d95707aa096f23c859c1a79 *DESCRIPTION
-4dbd39524843e8c3715aabcb2fbc064f *NAMESPACE
-5e2ce794add24e0aee0fcb52fcb17784 *R/aaa.R
-5ec91a96e6009c7a29b2020729204ce4 *R/epenreg.R
+f7f80bd6397d44282d8f013b8dd1ef9a *ChangeLog
+1d443ff002e06a48427af00bd265515e *DESCRIPTION
+d2e89558b0579361367f2a8b161bef48 *NAMESPACE
+70d429e55bb295f1466df02808cc2c4e *R/aaa.R
+1f056297c3c7855f46cb269742472cce *R/epenreg.R
 453849da16fc0010c522e983007a1e6d *R/integrator.R
 a89459e9d1b04d323a28e1c866b3d150 *man/Regression.Integrator.PenReg.SelMin.Config-class.Rd
 d5f666ebe8da5067589578e3f03c78ac *man/Regression.Integrator.PenReg.SelMin.FitObj-class.Rd
@@ -9,8 +10,8 @@ be342d0eb774f1d0eeb10f992434721e *man/Regression.Sweep.CV.Fit.Rd
 718403afb9b8b81d5ec782b04b307399 *man/Regression.Sweep.CV.FitObj-class.Rd
 e2acf5a8d2aab8ed9ba4be7ba27c0b40 *man/Regression.Sweep.PenReg.Config-class.Rd
 07f71b5d2e88b872c57498be80cab604 *man/Regression.Sweep.PenReg.FitObj-class.Rd
-7a347362a360968e953134072c7f963e *man/epenreg.Rd
-1802b3dce9402ead17ace77b7f76b0ef *man/epenreg.baselearner.control.Rd
-659aee470ed7696c3a11ffc4ce025c7b *man/epenreg.save.Rd
+c88eb31b128ebb578a48073ac0f271d0 *man/epenreg.Rd
+e8a5e2794d25b5eb172b6be194d641d2 *man/epenreg.baselearner.control.Rd
+e6e0467188f0059b2bc5e33203aa7974 *man/epenreg.save.Rd
 70901aba6b0a8bada910730a8bf29bf4 *man/plot.epenreg.Rd
 c185d9dd0442c32632870ecc88e944a2 *man/predict.epenreg.Rd

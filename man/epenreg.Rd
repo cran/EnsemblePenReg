@@ -12,6 +12,9 @@ epenreg(formula, data
   , baselearner.control=epenreg.baselearner.control()
   , integrator.control=epenreg.integrator.control()
   , ncores=1, filemethod=FALSE, print.level=1
+  , preschedule = TRUE
+  , schedule.method = c("random", "as.is", "task.length")
+  , task.length
 )
 }
 %- maybe also 'usage' for other objects documented here.
@@ -23,6 +26,9 @@ epenreg(formula, data
   \item{ncores}{Number of cores used for parallel training of base learners.}
   \item{filemethod}{Boolean flag indicating whether or not to save estimation objects to disk or not. Using \code{filemethod=T} reduces RAM pressure.}
   \item{print.level}{Controlling verbosity level.}
+  \item{preschedule}{Boolean flag, indicating whether base learner training jobs must be scheduled statically (\code{TRUE}) or dynamically (\code{FALSE}).}
+  \item{schedule.method}{Method used for scheduling tasks on threads. In "as.is" tasks are assigned to threads in a round-robin fashion for static scheduling. In dynamic scheduling, tasks form a queue without any re-ordering. In "random", tasks are first randomly shuffled, and the rest is similar to "as.is". In "task.length", a heuristic algorithm is used in static scheduling for assigning tasks to threads to minimize load imbalance, i.e. make total task lengths in threads roughly equal. In dynamic scheduling, tasks are sorted in descending order of expected length to form the task queue.}
+  \item{task.length}{Vector of estimated task lengths, to be used in the "task.length" method of scheduling.}
 }
 
 \value{

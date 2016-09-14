@@ -1,5 +1,10 @@
 #exportPattern("^[[:alpha:]]+")
 
+importFrom("graphics", "abline", "par", "plot")
+importFrom("methods", "new")
+importFrom("stats", "predict")
+importFrom("utils", "tar", "untar")
+
 importFrom(methods,setClass,setMethod)
 import(EnsembleBase)
 importFrom(parallel, detectCores)
