@@ -20,7 +20,7 @@ Objects can be created by calls of the form \code{new("Regression.Integrator.Pen
   }
 }
 \section{Extends}{
-Class \code{"\linkS4class{Regression.Integrator.Config}"}, directly.
+Class \code{"\link[EnsembleBase]{Regression.Integrator.Config-class}"}, directly.
 }
 \section{Methods}{
   \describe{

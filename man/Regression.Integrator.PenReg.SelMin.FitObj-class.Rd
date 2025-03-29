@@ -19,7 +19,7 @@ Objects can be created by calls of the form \code{new("Regression.Integrator.Pen
   }
 }
 \section{Extends}{
-Class \code{"\linkS4class{Regression.Integrator.FitObj}"}, directly.
+Class \code{"\link[EnsembleBase]{Regression.Integrator.FitObj-class}"}, directly.
 }
 \section{Methods}{
 No methods defined with class "Regression.Integrator.PenReg.SelMin.FitObj" in the signature.
@@ -32,7 +32,7 @@ Mansour T.A. Sharabiani, Alireza S. Mahani
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{"\linkS4class{Regression.Integrator.FitObj}"}
+\code{"\link[EnsembleBase]{Regression.Integrator.FitObj-class}"}
 }
 
 \keyword{classes}

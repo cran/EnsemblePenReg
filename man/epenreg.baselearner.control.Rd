@@ -24,7 +24,7 @@ epenreg.integrator.control(errfun=rmse.error, alpha=1.0
   \item{baselearner.configs}{List of base learner configurations. Default is to call \code{\link[EnsembleBase]{make.configs}} from package \pkg{EnsembleBase}.}
   \item{npart}{Number of partitions to train each base learner configuration in a CV scheme.}
   \item{nfold}{Number of folds within each data partition.}
-  \item{errfun}{Error function used to compare performance of base learner configurations. Default is to use \code{\link{rmse.error}} from package \pkg{EnsembleBase}.}
+  \item{errfun}{Error function used to compare performance of base learner configurations. Default is to use \code{\link[EnsembleBase]{rmse.error}} from package \pkg{EnsembleBase}.}
   \item{alpha}{Determining L1 vs L2 penalty. \code{alpha=1} leads to Lasso (L1) shrinkage, while \code{alpha=0.0} leads to Ridge (L2) shrinkage. See \code{glmnet} help files for more.}
   \item{n}{Suggested number of \code{lambda}'s in Penalized Regression. Actual number may be smaller than \code{n}, and is determined by the \code{glmnet} package.}
   \item{method}{Integrator method. Currently, only option is "default", where PenReg is performed on all base learner instances, and CV error is used to find the optimal shrinkage parameter. Same CV-based PenReg output is used to make final prediction.}
@@ -41,6 +41,6 @@ Mansour T.A. Sharabiani, Alireza S. Mahani
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\code{\link[EnsembleBase]{make.configs}}, \code{\link{rmse.error}}
+\code{\link[EnsembleBase]{make.configs}}, \code{\link[EnsembleBase]{rmse.error}}
 }
 

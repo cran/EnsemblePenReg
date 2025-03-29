@@ -35,10 +35,10 @@ epenreg(formula, data
 An object of classes \code{epenreg} (if \code{filemethod==TRUE}, also has class of \code{epenreg.file}), a list with the following elements:
   \item{call}{Copy of function call.}
   \item{formula}{Copy of formula argument in function call.}
-  \item{instance.list}{An object of class \code{\linkS4class{Instance.List}}, containing all permutations of base learner configurations and random data partitions generated in the body of the function.}
+  \item{instance.list}{An object of class \code{\link[EnsembleBase]{Instance.List-class}}, containing all permutations of base learner configurations and random data partitions generated in the body of the function.}
   \item{integrator.config}{Copy of configuration object passed to the integrator. Object of class \code{\linkS4class{Regression.Integrator.PenReg.SelMin.Config}}.}
   \item{method}{Integration method. Currently, only "default" is supported.}
-  \item{est}{A list with these elements: 1) \code{baselearner.cv.batch}, an object of class \code{\linkS4class{Regression.CV.Batch.FitObj}} containing the fit object from CV batch training of base learners; 2) \code{integrator}, an object of class \code{\linkS4class{Regression.Integrator.PenReg.SelMin.FitObj}} containing the fit object returned by the integrator.}
+  \item{est}{A list with these elements: 1) \code{baselearner.cv.batch}, an object of class \code{\link[EnsembleBase]{Regression.CV.Batch.FitObj-class}} containing the fit object from CV batch training of base learners; 2) \code{integrator}, an object of class \code{\linkS4class{Regression.Integrator.PenReg.SelMin.FitObj}} containing the fit object returned by the integrator.}
   \item{y}{Copy of response variable vector.}
   \item{pred}{Within-sample prediction of the ensemble model.}
   \item{filemethod}{Copy of passed-in \code{filemethod} argument.}
@@ -49,7 +49,7 @@ Mansour T.A. Sharabiani, Alireza S. Mahani
 }
 
 \seealso{
-\code{\link{epenreg.baselearner.control}}, \code{\link{epenreg.integrator.control}}, \code{\linkS4class{Instance.List}}, \code{\linkS4class{Regression.Integrator.PenReg.SelMin.Config}}, \code{\linkS4class{Regression.CV.Batch.FitObj}}, \code{\linkS4class{Regression.Batch.FitObj}}, \code{\linkS4class{Regression.Integrator.PenReg.SelMin.FitObj}}
+\code{\link{epenreg.baselearner.control}}, \code{\link{epenreg.integrator.control}}, \code{\link[EnsembleBase]{Instance.List-class}}, \code{\linkS4class{Regression.Integrator.PenReg.SelMin.Config}}, \code{\link[EnsembleBase]{Regression.CV.Batch.FitObj-class}}, \code{\link[EnsembleBase]{Regression.Batch.FitObj-class}}, \code{\linkS4class{Regression.Integrator.PenReg.SelMin.FitObj}}
 }
 \examples{
 data(servo)
